@@ -32,7 +32,7 @@ public:
     Ttable(int _size = 0);
     Ttable(const Ttable &tmp);
     ~Ttable();
-    Ttable &operator=(Ttable tmp);
+    Ttable &operator=(const Ttable& tmp);
 
     void Add(TRecord tmp);
     void Del(TRecord tmp);

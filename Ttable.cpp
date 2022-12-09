@@ -43,16 +43,16 @@ Ttable::~Ttable() {
     }
 }
 
-Ttable &Ttable::operator=(Ttable tmp) {
+Ttable &Ttable::operator=(const Ttable& tmp) {
     if (size != tmp.size){
-        if (size > 0){
+        if (size != 0){
             delete[]mem;
         }
         size = tmp.size;
         mem = new TRecord[size];
     }
     count = tmp.count;
-    for (int i = 0; i < size; ++i) {
+    for (int i = 0; i < size; i++) {
         mem[i] = tmp.mem[i];
     }
 }
