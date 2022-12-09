@@ -67,8 +67,8 @@ void Ttable::Add(TRecord tmp) {
     }
 }
 
-void Ttable::Del(TRecord tmp) {
-    int l = getNumber(tmp.getName());
+void Ttable::Del(string tmp) {
+    int l = getNumber(tmp);
     if (l > 0){
         mem[l] = mem[--count];
     }

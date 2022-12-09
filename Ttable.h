@@ -35,7 +35,7 @@ public:
     Ttable &operator=(const Ttable& tmp);
 
     void Add(TRecord tmp);
-    void Del(TRecord tmp);
+    void Del(string tmp);
     int Search(string Key);
     int IsEmpty();
     int IsFall();
